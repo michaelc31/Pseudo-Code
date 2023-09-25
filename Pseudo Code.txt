@@ -1,0 +1,26 @@
+Debut Acheter Bonbon (Réel Argent, Réel Prix)
+Debut Argent ou pas 
+	
+	Si Réel Argent > 0
+		retourner sur "Debut soustraction"
+	sinon
+		retourner sur "Acheter Bonbon"
+	Fin Si
+
+Début Soustraction (Réel Argent, Réel Prix)
+
+	Réel Nombre Bonbon Entier ← Réel Argent/Réel Prix 
+	retourner Réel Nombre Bonbon Entier
+
+Fin Soustraction
+
+Début Boucle 
+
+	Tant que réel prix < réel argent
+		ajouter bonbon
+	Fin Tant que
+
+Fin Boucle
+
+
+
