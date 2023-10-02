@@ -1,10 +1,10 @@
 Debut Acheter Bonbon (Réel Argent, Réel Prix)
 
 Debut boucle
-
+si reel prix > 0
 tant que 
 	Début Argent ou pas
-	Si Réel Argent > 0
+	Si Réel Argent > reel <prix
 		debut soustraction 
 		Réel Bonbon ← Réel Argent / Réel Prix
 		retourner Entier Bonbon
@@ -13,6 +13,3 @@ tant que
 	fin de si
 fin de tant que
 fin Acheter Bonbon
-	
-
-
