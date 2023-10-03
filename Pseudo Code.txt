@@ -2,19 +2,13 @@ Début
 
 Demander Argent Réel (Argent Réel , Prix Réel)
 
-Si Réel Argent > 0 > Prix Réel alors 
-	debut soustraction (Argent Réel , Prix Réel)
-	Reel Bonbon ← Argent Réel - Prix Réel
-	Retourner réel Bonbon
- sinon 
-	demander Argent
-fin de Si
-
-Tant que 
-	réel Bonbon <= Argent réel
-	réel Bonbon ← Réel Bonbon + 1
-
-Fin Tant que 
-	retourner Réel Bonbon
-
+Si Réel Argent => Prix Réel > 0 
+alors 
+	Tant que 
+		Entier Bonbon <= Argent réel
+		Entier Bonbon ← Bonbon + 1
+	Fin Tant que 
+		retourner Entier Bonbon
+sinon
+	Demander Argent
 Fin
