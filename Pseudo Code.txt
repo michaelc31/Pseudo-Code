@@ -1,15 +1,20 @@
-Debut Acheter Bonbon (Réel Argent, Réel Prix)
+Début 
 
-Debut boucle
-si reel prix > 0
-tant que 
-	Début Argent ou pas
-	Si Réel Argent > reel <prix
-		debut soustraction 
-		Réel Bonbon ← Réel Argent / Réel Prix
-		retourner Entier Bonbon
-	sinon 
-		Demander Argent
-	fin de si
-fin de tant que
-fin Acheter Bonbon
+Demander Argent Réel (Argent Réel , Prix Réel)
+
+Si Réel Argent > 0 > Prix Réel alors 
+	debut soustraction (Argent Réel , Prix Réel)
+	Reel Bonbon ← Argent Réel - Prix Réel
+	Retourner réel Bonbon
+ sinon 
+	demander Argent
+fin de Si
+
+Tant que 
+	réel Bonbon <= Argent réel
+	réel Bonbon ← Réel Bonbon + 1
+
+Fin Tant que 
+	retourner Réel Bonbon
+
+Fin
